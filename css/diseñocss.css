@@ -1,0 +1,220 @@
+@font-face{
+	font-family: ubunturegular;
+	src = url(fuentes/Ubuntu-R.ttf) format('truetype');
+}
+@font-face{
+	font-family: ubuntuBold;
+	src = url(fuentes/Ubuntu-B.ttf) format('truetype');
+}
+@font-face{
+	font-family: ubuntuItalic;
+	src = url(fuentes/Ubuntu-I.ttf) format('truetype');
+}
+@font-face{
+	font-family: ubuntuBoldItalic;
+	src = url(fuentes/Ubuntu-BI.ttf) format('truetype');
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: ubuntuBold;
+}
+h1,h2{
+	transform: translate(150px 0px);
+	position: relative;
+	color: white;
+	font-size: 16px;
+	top: -20%;
+	margin-top: 10px;
+	letter-spacing: 0px;
+	display: inline;
+}
+p{
+	font-family: ubunturegular;
+}
+/*menu de navegacion */
+nav{
+	display: inline;
+	float: right;
+	margin: 20px;
+}
+nav ul{
+	font-size: 12px;
+	padding-left: 0px;
+	margin-left: 0px;
+	background-color: grey;
+	color: white;
+	width: 50%;
+	font-family: ubuntuRegular;
+	position: relative;
+	display: inline;
+}
+nav ul li{
+	display: inline;
+	text-align: center;
+}
+nav ul li a{
+	background: grey;
+	color: white;
+	text-decoration: none;
+	float: right;
+	border: 1px solid white;
+	border-radius: 0px 10px 0px 10px;
+	box-shadow: 0px 0px 5px white;
+	width: 80px;
+}
+nav ul li a:hover{
+	background: white;
+	color: black;
+	box-shadow: 0px 0px 25px white;
+}
+canvas{
+	border: 0px solid white;
+
+}
+/*Maquetacion principal*/
+body{
+	background: lightgrey;
+	text-align: center;
+}
+#principal{
+		background-color: grey;
+		margin: auto;
+		width: 80%;
+		height: 100%;
+		position: relative;
+		text-align: left;
+
+
+}
+#cajaheader{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	background: darkgrey;
+}
+header{
+/*	display: table;*/
+	margin: auto;
+	text-align: left;
+	width: 100%;
+	height: 100px;
+	background: darkgrey;
+	overflow: hidden;
+	border: 2px solid white;
+	border-radius: 5px 35px 0px 0px;
+	-moz-border-radius: 5px 35px 0px 0px;
+	-webkit-border-radius: 5px 35px 0px 0px;
+	-o-border-radius: 5px 35px 0px 0px;
+	box-shadow: 0px 0px 10px white;
+}
+footer{
+	/*display: table;*/
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	background: darkgrey;
+	border: 2px solid white;
+	border-radius:  0px 0px 5px 35px;
+	box-shadow: 0px 0px 10px white;
+}
+/*contenido*/
+#contenido{
+	width: 100%;
+	border: 2px solid white;
+	box-shadow: 0px 0px 10px white;
+
+}
+article{
+	/*background-color: white;*/
+	width: 55%;	
+	/*float: left;*/
+	margin: 10px;
+	height: 100%;
+	border: 1px solid white;
+	padding:  10px 10px 10px 150px;
+	border-radius: 0px 25px 0px 25px;
+}
+article:hover{
+	background: rgba(255,255,255,0.5);
+	box-shadow: 0px 0px 25px white;
+}
+aside{
+	float: right;
+	display: inline-table;
+	width: 20%;
+	/*background: white;*/
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 0px 25px 0px 25px;
+	box-shadow: 3px 3px 10px black;
+}
+aside ul{
+	width: 100%;
+	height: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: white;
+	float: left;
+	font-family: ubuntuRegular;
+	font-size: 10px;
+	text-decoration: none;
+	list-style: none;
+}
+aside ul li{
+	width: 100%;
+	text-decoration: none;
+	border: 1px solid white;
+	border-radius: 0px 5px 0px 5px;
+
+}
+aside ul li a{
+	width: 100%;
+	text-decoration: none;
+	overflow: hidden;
+	height: 30px;
+}
+time{
+	font-family: ubuntuRegular;
+	font-size: 10px;
+}
+#sobremi{
+	width: 100%;
+	height: 120px;
+	background-color: blue;
+	color: white;
+	background: black;
+	font-size: 10px;
+	text-decoration: none;
+	text-align: justify;
+	overflow: hidden;
+
+}
+#sobremi a{
+	color: white;
+	text-decoration: none;
+}
+#logo{
+	width: 100px;
+	height: 100px;
+	display: inline;
+	position: relative;
+}
+#mifoto{
+	width: 100px;
+	height: 100px;
+	font-family: ubuntuBold;
+	font-size: 20px;
+	color: white;
+	text-align: left;
+	background: url('../photo/KevinMikeHerreraVega.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: box;
+	border: 1px solid white;
+	border-radius: 0px 10px 0px 10px;
+	box-shadow: 0px 0px 10px white;
+	float: left;
+	margin: 10px;
+
+}
+

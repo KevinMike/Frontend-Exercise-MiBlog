@@ -1,0 +1,78 @@
+<DOCTYPE HTLM>
+<html>
+	<head>
+		<style type="text/css">
+				[required]{
+					box-shadow: 0.3px 0.3px 0.5px black;
+					border-color: blue;
+				}
+				:invalid{
+					   background-color: #ddd;
+	   
+ 			  box-shadow: 5px 5px 0 #333;
+ 			  -webkit-box-shadow: 5px 5px 0 #333;
+ 			  -moz-box-shadow: 5px 5px 0 #333;
+
+				}
+				#editable{
+					border-radius: 0.5px;
+					background: red;
+				}
+		</style>
+	<!--	<script>
+			function recarga()
+			{
+			location.href=location.href
+			}
+			setInterval('recarga()',10000)
+		</script> -->
+		<title>Blog creado por Kevin Mike</title>
+		<nav>
+			<ul>
+				Opcion 1
+				Opcion 2
+			</ul>
+		</nav>
+	</head>
+	<body>
+		<header>
+			<h1>Blog de Ingenieria en Informatica y Sistemas</h1>
+		</header>
+		<canvas id="dibujo" widht="100px" height="200px" style="border:2px solid black;">
+			
+		</canvas>
+		<script type="text/javascript">
+
+			var x = document.getElementById("dibujo");
+			var xy = c.getContext("2d");
+			xy.moveTo(10,10);
+			xy.lineTo(10,90);
+		</script>
+		<section id = "Multimedia">
+			<video controls = "controls"><source scr="Recursos/Videos/video1.avi" type ="video/avi"/>Tu navegador no soporta HTML5</video>
+			<audio controls="controls" autoplay="autoplay" preload="preload" loop="loop"><source src ="Recursos/Audios/audio1.mp3" type="audio/mp3"/>Tu navegador no soporta HTML5</audio>
+		</section>
+		<section id="editable" contenteditable = "true">
+			<article>
+				Texto de mi articulos
+			</article>
+			<aside>
+				informacion tangencial
+			</aside>
+		</section>
+		<section>
+			<table>
+				<tr><td>Ingrese Nombre : </td><td><input type="text" required/></td></tr>
+				<tr><td>Apellido : </td><td><input type="text" required/></td></tr>
+				<tr><td>Email</td><td><input type="email" value="usuario@dominio.com" required/></td></tr>
+				<tr><td>Fecha</td><td><input type="date" value="today" /></td></tr>
+				<tr><td>Encuesta </td><td><input type="range" max="10" min="0" step="5" /></td></tr>
+				<tr><td>Color</td><td><input type="color" placeholder="e.g. #cecece" /></td></tr>
+				<tr><td>Numero</td><td><input type="number" step="1" max="10" min="0" value="5"></td></tr>
+			</table>
+		</section>
+		<footer>
+			
+		</footer>
+	</body>
+</html>
